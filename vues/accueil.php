@@ -12,9 +12,12 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
+      
       <a class="brand" href="#">Accueil</a>
-      <a class="brand" href="#">Project name</a>
- 
+      <a class="brand" href="#">Produits</a>
+ 	  <a class="brand" href="#">Contact</a>
+ 	  <a class="brand" href="#">Connexion</a>
+ 	  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
         <!-- .nav, .navbar-search, .navbar-form, etc -->
