@@ -12,12 +12,12 @@
 
 <!-- CSS & JS pour template -->
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/half-slider.css" rel="stylesheet">
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!--  -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap -->
+<link rel="shortcut icon" type="image/ico" href="http://voith.com/cps/voith_static/img/icons/favicon.ico" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css"/>
 </head>
