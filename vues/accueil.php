@@ -1,5 +1,11 @@
 <?php include 'body/header.php';?>
-
+<div class="carousel-item">
+  <img src="https://techguru.fr/wp-content/uploads/sites/7/2017/09/google-amp-fast-speed-travel-ss-1920.jpg" alt="...">
+  <div class="carousel-caption d-none d-md-block">
+    <h3>...</h3>
+    <p>...</p>
+  </div>
+</div>
 <!-- Navigation  -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="#">Filelec.ovh</a>
@@ -16,7 +22,7 @@
         <a class="nav-link" href="#">Nous Contacter</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Espace membre</a>      
+        <a class="nav-link" href="#">Espace membre</a>
       </li>
     </ul>
   </div>
@@ -37,7 +43,7 @@
                    </p>
                </div>
                <div class="col-lg-4 col-md-4  col-sm-4" >
-               
+
                  <center> <i class="fa fa-paper-plane-o  fa-5x icon-round  faa-pulse animated"></i>
                    <h4><strong>Livraisons 7J/7</strong> </h4></center> <br />
                    <p>
@@ -55,21 +61,15 @@
            </div>
        </div>
    </section>
-   
+      <br><br><br><br><br><br>
+
     <section id="home-service" style="margin-top:20px;">
+      <center>
+      <h5>Les nouveautées</h5><br>
+      <center>
       <div class="container">
-           <div class="row ">
-               <div class="col-lg-4 col-md-4  col-sm-4 "  >
-                  <div class="card border-secondary mb-3" style="max-width: 20rem;">
-  					<div class="card-header">Header</div>
-  						<div class="card-body text-secondary">
-    					<h4 class="card-title">Secondary card title</h4>
-    					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  					</div>
-               </div>
-           </div>
-       </div>
+          <div class="row ">
+              <?php include 'fonctionphp/page_produit.php'; ?>
+          </div>
+      </div>
    </section>
-  
-   
-  
