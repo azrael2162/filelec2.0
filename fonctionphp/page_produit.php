@@ -1,5 +1,15 @@
 <?php
+include 'connexion_bdd.php';
 
+global $bd;
+
+$query="SELECT * FROM article where marque_pro='Gigabyte'";
+$rows2=$bd->prepare($query);
+$rows2->execute();
+
+while ($row = $rows2->fetch(PDO::FETCH_NUM)) {
+ print_r($row);
+}
 for ($i = 0; $i < 20; $i++) {
 
     echo "<div class='col-lg-4 col-md-4  col-sm-4 ' >
