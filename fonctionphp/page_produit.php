@@ -3,7 +3,7 @@ include 'connexion_bdd.php';
 
 global $db;
 
-$query="SELECT * FROM PRODUITS where marque_pro='NVIDIA'";
+$query="SELECT * FROM PRODUITS where type_pro='Carte-Graphique' OR  type_pro='CPU' ";
 $rows2=$db->prepare($query);
 $rows2->execute();
 
@@ -19,13 +19,16 @@ while ($row = $rows2->fetch(PDO::FETCH_NUM)) {
 
  echo "<div class='col-lg-4 col-md-4  col-sm-4 ' >
             <div class='card border-secondary mb-3' style='max-width: 20rem;''>
-              <div class='card-header'>$data1</div>
+              <div class='card-header'>$data4</div>
                 <div class='card-body text-secondary'>
-                <img src='images/produit/gtx980.jpg' alt=''>
-                <h4 class='card-title'>$data4</h4>
-                  <p class='card-text'>$data6 €</p>
+                <img style='height: 200px; width: 100%; display: block;' src='$data2' alt='Card image'>
+                <br>
+                <h4 class='card-title'>$data1</h4><br>
+                <h6 class='card-title'>$data6 €</h6><br>
+
                 </div>
               </div>
+
           </div>
         ";
 }

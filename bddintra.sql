@@ -268,19 +268,19 @@ insert into GROUPE_PRIVILEGE values
 
 insert into PRODUITS (id_pro,nom_pro,image_pro,type_pro,marque_pro,stock_pro,prixunit_pro)
   values
-  (1,'MSI GeForce GTX 1080 Ti','images/produit/gtx1080ti.jpg','Carte-Graphique','MSI','20','599.99'),
-  (2,'Intel Core i7-6700K','images/produit/intel7.jpg','CPU','Intel core','100','350'),
-  (3,'ASUS ROG STRIX X99','images/produit/asus.jpg','Carte-Mere','ASUS-MB','50','349.99'),
-  (4,'Intel Core i5 7400K','images/produit/intel5.jpg','CPU','Intel core','100','199.99'),
-  (5,'Corsair RAM 16GO','images/produit/ram.jpg','RAM','Corsair','40','100'),
-  (6,'Geforce GTX 980','images/produit/gtx980.jpg','Carte-Graphique','NVIDIA','20','300'),
-  (7,'Kingston 4GO DDR4','images/produit/ram3.jpg','RAM','Kingston','40','25'),
-  (8,'ASRock 775i65G R3.0','images/produit/asrock.jpg','Carte-Mere','ASRock','40','64'),
-  (9,'ASUS X99-WS/IPMI','images/produit/x99.jpg','Carte-Mere','ASUS-MB','20','449'),
-  (10,'MSI A320M GAMING PRO','images/produit/msia320.jpg','Carte-Mere','MSI-MB','40','78'),
-  (11,'AMD A10-7870K','images/produit/amda.jpg','CPU','AMD','40','78'),
-  (12,'HyperX Fury 16 Go (2x 8Go)','images/produit/ram3.jpg','RAM','HyperX','40','152'),
-  (13,'ASUS 210-SL-TC1GD3-L','images/produit/geforce210.jpg','Carte-Graphique','NVIDIA','40','32');
+  (1,'MSI GeForce GTX 1080 Ti','https://www.msi.com/asset/resize/image/global/product/product_0_20170323105218_58d33862572b9.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png','Carte-Graphique','MSI','20','599.99'),
+  (2,'Intel Core i7-6700K','http://www.grooves.land/images/dgh/233368_00.png','CPU','Intel core','100','350'),
+  (3,'ASUS ROG STRIX X99','https://s3.eu-west-2.amazonaws.com/hardwarepick/img/products/motherboards/asus-rog-strix-x99-gaming-2.png','Carte-Mere','ASUS-MB','50','349.99'),
+  (4,'Intel Core i5 7400K','https://www.media-rdc.com/medias/8363c51a73c2399e9fc66ccceb55868d/corei5-processor-unlocked-box-j33801-002.png','CPU','Intel core','100','199.99'),
+  (5,'Corsair RAM 16GO','http://www.corsair.com/~/media/corsair/product-images/dram/vengeance-led/red/large/veng_led_blk-red_2up.png','RAM','Corsair','40','100'),
+  (6,'Geforce GTX 980','http://www.nvidia.fr/docs/IO/147347/geforce-gtx-980-front.png','Carte-Graphique','NVIDIA','20','300'),
+  (7,'Kingston 4GO DDR4','http://pipertech.ca/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/7/1/713zf-qnzcl._sl1500__1__1.png','RAM','Kingston','40','25'),
+  (8,'ASRock 775i65G R3.0','http://www.asrock.com/mb/photo/775i65G%20R3.0(L4).png','Carte-Mere','ASRock','40','64'),
+  (9,'ASUS X99-WS/IPMI','https://www.asus.com/websites/global/products/rgUoVLEGwnM3NTF2/img/hp/gaming/turboapp.png','Carte-Mere','ASUS-MB','20','449'),
+  (10,'MSI A320M GAMING PRO','https://www.msi.com/asset/resize/image/global/product/product_6_20170407103908_58e6fbccf2ace.png62405b38c58fe0f07fcef2367d8a9ba1/600.png','Carte-Mere','MSI-MB','40','78'),
+  (11,'AMD A10-7870K','https://avadirect-freedomusainc1.netdna-ssl.com/Pictures/big/10347023_2.png','CPU','AMD','40','78'),
+  (12,'HyperX Fury 16 Go (2x 8Go)','http://cicindele.com.free.fr/Blogger/LD0001545856_2_0001545915.png','RAM','HyperX','40','152'),
+  (13,'ASUS 210-SL-TC1GD3-L','http://picscdn.redblue.de/doi/pixelboxx-mss-57907779/fee_325_225_png/ASUS-210-SL-TC1GD3-L','Carte-Graphique','ASUS','40','32');
 
 insert into UTILISATEUR (uti_nom,uti_prenom,uti_email,login,passwordd,grp_id)
   values
