@@ -13,5 +13,4 @@ if (empty($page))
 }else if ($page!="accueil") {
   header("Location:index.php?page=404");
 }
-//coucou
 ?>
