@@ -25,10 +25,12 @@ while ($row = $rows2->fetch(PDO::FETCH_NUM)) {
                 <br>
                 <h4 class='card-title'>$data1</h4><br>
                 <h6 class='card-title'>$data6 €</h6><br>
-
+                <form class='' action='?detail.php' method='post'>
+                  <input type='submit' name='$data' value='acheter'>
+                  <input type='submit' name='$data' value='detail' >
+                </form>
                 </div>
               </div>
-
           </div>
         ";
 }
