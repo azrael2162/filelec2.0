@@ -15,19 +15,20 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Nos produits</a>
+        <a class="nav-link" href="?page=produit">Nos produits</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Nous Contacter</a>
+        <a class="nav-link" href="?page=contact">Nous Contacter</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Espace membre</a>
+        <a class="nav-link" href="?page=membre">Espace membre</a>
       </li>
     </ul>
   </div>
 </nav>
 <br>
 <br>
+
 <!-- Presentation des services de l'entreprise -->
  <section id="home-service" style="margin-top:20px;">
        <div class="container">
