@@ -1,4 +1,3 @@
-<?php include 'body/header.php';?>
 <div class="carousel-item">
   <img src="https://techguru.fr/wp-content/uploads/sites/7/2017/09/google-amp-fast-speed-travel-ss-1920.jpg" alt="...">
   <div class="carousel-caption d-none d-md-block">

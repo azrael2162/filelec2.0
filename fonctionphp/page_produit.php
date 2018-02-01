@@ -1,14 +1,15 @@
 <?php
+//sxript pour afficher les nouveaux produits
 include 'connexion_bdd.php';
 
 global $db;
 
-$query="SELECT * FROM PRODUITS where type_pro='Carte-Graphique' OR  type_pro='CPU' ";
+$query="SELECT * FROM PRODUITS where type_pro='Carte-Graphique' OR  type_pro='CPU'";
 $rows2=$db->prepare($query);
 $rows2->execute();
 
 while ($row = $rows2->fetch(PDO::FETCH_NUM)) {
- $data = $row[0]; //id
+ $data =  $row[0]; //id
  $data1 = $row[1]; // nom_pro
  $data2 = $row[2];//image_pro
  $data3 = $row[3];//type_pro
@@ -25,9 +26,10 @@ while ($row = $rows2->fetch(PDO::FETCH_NUM)) {
                 <br>
                 <h4 class='card-title'>$data1</h4><br>
                 <h6 class='card-title'>$data6 €</h6><br>
-                <form class='' action='?detail.php' method='post'>
-                  <input type='submit' name='$data' value='acheter'>
-                  <input type='submit' name='$data' value='detail' >
+                <form action='?page=configurator-bride_pump' method='GET'>
+               <li class='span4'>
+                  <a class='thumbnail' href='?page=detail&amp;type_pro=$data'>Détail</a>
+                  <a class='thumbnail' href='?page=detail&amp;type_pro=$data'>Acheter</a>
                 </form>
                 </div>
               </div>
