@@ -20,17 +20,19 @@ while ($row = $rows2->fetch(PDO::FETCH_NUM)) {
  $data5 = $row[5];//stock_pro
  $data6 = $row[6];//prixunit_pro
 }
-echo "<div class='form-group'>
+echo "<div class='container'>
+<div class='form-group'>
      <label for='exampleSelect1'>Example select</label>
-     <select class='form-control' id='exampleSelect1'>
+    <select class='form-control' id='exampleSelect1'>
      ";
+
 for ($i=0; $i <= $data5; $i++) {
   echo "
     <option>$i</option>
   ";
 }
-
 echo"
 </select>
-</div>";
+</div>
+  </div>";
 ?>
