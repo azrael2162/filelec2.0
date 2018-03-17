@@ -1,5 +1,4 @@
 <?php
-
 $page=htmlentities($_GET['page']);
 $pages=scandir('pages');
 
