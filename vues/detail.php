@@ -15,6 +15,12 @@
       <li class="nav-item">
         <a class="nav-link" href="?page=membre">Espace membre</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?page=membre">Modification Profil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?page=membre">Déconnexion</a>
+      </li>
     </ul>
   </div>
 </nav>
