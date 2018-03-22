@@ -76,4 +76,41 @@ function Deconnexion(){
   header('location: ?page=accueil');
 }
 
+function Modife(){
+  GLOBAL $db;
+  $query = "SELECT * FROM UTILISATEUR WHERE uti_id='".$_SESSION['id_a']."'";
+  $query2ok=$db->prepare($query);
+  $query2ok->execute();
+  $count=$query2ok->rowCount();
+
+    if ($count == 1) {
+
+      while ($row = $query2ok->fetch(PDO::FETCH_NUM)) {
+      $nom=$row[1];
+      $prenom=$row[2];
+      $email=$row[3];
+      $login=$row[4];
+      $password=$row[5];
+    }
+    echo "
+    <label for=''><p>Nom:</p><input type='text' name='' value='$nom'></label><br>
+    <label for=''><p>Prénom:</p><input type='text' name='' value='$prenom'></label><br>
+    <label for=''><p>Email:</p><input type='mail' name='' value='$email'></label><br>
+    <label for=''><p>Login:</p><input type='text' name='' value='$login'></label><br>
+    <label for=''><p>Password:</p><input type='password' name='' placeholder='Votre '></label><br>
+    ";
+  }
+}
+
+function  desinscrire(){
+  GLOBAL $db;
+  $query="DELETE  FROM UTILISATEUR WHERE uti_id='".$_SESSION['id_a']."'";
+  $queryok=$db->prepare($query);
+  $queryok->execute();
+  $_SESSION =array();
+  session_destroy();
+
+    header('location: ?page=accueil');
+  
+}
  ?>
