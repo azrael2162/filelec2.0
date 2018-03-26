@@ -1,3 +1,4 @@
+<?php include 'fonctionphp/produit.php'; ?>
 <div class="container">
   <ul class="nav nav-tabs">
   <li class="nav-item">
@@ -17,3 +18,5 @@
   </li>
 </ul>
 <br><br><br>
+
+<?php Cpu(); ?>

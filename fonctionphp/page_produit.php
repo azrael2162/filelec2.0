@@ -26,7 +26,7 @@ while ($row = $rows2->fetch(PDO::FETCH_NUM)) {
                 <br>
                 <h4 class='card-title'>$data1</h4><br>
                 <h6 class='card-title'>$data6 €</h6><br>
-                <form action='?page=configurator-bride_pump' method='GET'>
+                <form action='' method='GET'>
                <li class='span4'>
                   <a class='thumbnail' href='?page=detail&amp;type_pro=$data'>Détail</a>
                   <a class='thumbnail' href='?page=detail&amp;type_pro=$data'>Acheter</a>
