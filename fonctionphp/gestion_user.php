@@ -19,6 +19,10 @@ function  connexion(){
       //ouverture de la session
       session_start();
       $_SESSION['id_a']=$id;
+      $_SESSION['panier']=array();
+      $_SESSION['panier']['libelleProduit'] = array();
+      $_SESSION['panier']['qteProduit'] = array();
+      $_SESSION['panier']['prixProduit'] = array();
       header('location: ?page=accueil');
     }
   }
@@ -111,6 +115,6 @@ function  desinscrire(){
   session_destroy();
 
     header('location: ?page=accueil');
-  
+
 }
  ?>

@@ -281,16 +281,3 @@ insert into PRODUITS (id_pro,nom_pro,image_pro,type_pro,marque_pro,stock_pro,pri
   (11,'AMD A10-7870K','https://avadirect-freedomusainc1.netdna-ssl.com/Pictures/big/10347023_2.png','CPU','AMD','40','78'),
   (12,'HyperX Fury 16 Go (2x 8Go)','http://cicindele.com.free.fr/Blogger/LD0001545856_2_0001545915.png','RAM','HyperX','40','152'),
   (13,'ASUS 210-SL-TC1GD3-L','http://picscdn.redblue.de/doi/pixelboxx-mss-57907779/fee_325_225_png/ASUS-210-SL-TC1GD3-L','Carte-Graphique','ASUS','40','32');
-
-insert into UTILISATEUR (uti_nom,uti_prenom,uti_email,login,passwordd,grp_id)
-  values
-('Pinelli','Vincent','Corsepowa@gmail.com','toto','toto',1),
-('Lejeune','Axel','Bretoncon@gmail.com','titi','titi',1),
-('Jendli','Mohammed','Algerger@gmail.com','tata','tata',1),
-('Denis','Roger','Rabbit@gmail.com','pofpof','pofpof',2),
-('Rivai','Pierre','Present@gmail.com','pufpuf','pufpuf',2),
-('Solo','Anakin','Kenobig@gmail.com','poufpouf','poufpouf',2),
-('Briquet','Light','DeathNote@gmail.com','aze','aze',2),
-('Maison','Auguste','Stgermain@gmail.com','tgo','tgo',3),
-('Dupont','Julien','Mangaka@gmail.com','tdf','tdf',3),
-('Deplage','Mathilde','SWAnaking@gmail.com','pifpif','pifpif',3);

@@ -1,5 +1,4 @@
 <?php session_start();?>
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -28,13 +27,31 @@
         <a class="nav-link" href="?page=produit">Nos produits</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="?page=contact">Nous Contacter</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="?page=gestmembre">Espace membre</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?page=membre">connexion</a>
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?page=panier">Panier</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="?page=deconnexion">Déconnexion</a>
