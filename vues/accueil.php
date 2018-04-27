@@ -1,10 +1,10 @@
-<!-- Presentation des services de l'entreprise -->
+<?php var_dump($_SESSION['panier']); ?><!-- Presentation des services de l'entreprise -->
  <section id="home-service" style="margin-top:20px;">
        <div class="container">
            <div class="row ">
                <div class="col-lg-4 col-md-4  col-sm-4 "  >
                    <center><i  class="fa fa-desktop fa-5x  icon-round  faa-ring animated"></i><br />
-                   <h4><strong>Large Gamme de produits</strong> </h4></center>
+                   <h4><strong>Large Gamme de produits</strong></h4></center>
                    <p>
                      Nous vous proposons sur notre site une large gamme de choix et
                     de qualité. Nous remettons nos stocks à jour le plus régulièrement possible,

@@ -1,6 +1,4 @@
 <?php
-ob_start();
-ob_end_flush();
 function Ajoutpanier(){
   if (!empty($_SESSION['id_a'])) {
     if (isset($_POST['valider'])) {
@@ -13,7 +11,7 @@ function Ajoutpanier(){
         echo "<SCRIPT LANGUAGE='JavaScript'> document.location.href='?page=accueil' </SCRIPT>";
     }
   }else {
-    echo "<SCRIPT LANGUAGE='JavaScript'> document.location.href='?page=membre' </SCRIPT>";
+    echo "<SCRIPT LANGUAGE='JavaScript'> document.location.href='?page=membre'</SCRIPT>";
   }
 }
  ?>

@@ -17,7 +17,7 @@ function Cpu(){
     $marque=$row[4];
     $stock=$row[5];
     $prix=$row[6];
-
+  
     echo "
     <div class='card border-primary mb-3' width='20px'>
       <div class='card-header'>$marque</div>
