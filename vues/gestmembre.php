@@ -5,7 +5,7 @@ include 'fonctionphp/gestion_user.php';
   echo " <div class='row'>
     <div class='col'>
       <h5>Mes options</h5><br><br>
-      <a href='#' class='btn btn-primary'>Vos commandes</a><br><br>
+      <a href='?page=commande' class='btn btn-primary'>Vos commandes</a><br><br>
       <a href='?page=desinc' class='btn btn-primary'>Se désinscrire</a>
     </div>
     <div class='col'>
