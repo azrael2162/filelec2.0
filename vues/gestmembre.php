@@ -12,13 +12,15 @@ include 'fonctionphp/gestion_user.php';
       <h5>Mes informations personelles</h5>
       ";?>
       <?php echo "
-      <form class='' action='index.html' method='post'>
+      <form class='' action='?page=gestmembre' method='post'>
       ";
-        Modife();
+        ValeurModife();
       echo "
       <br>
       <input type='submit' name='modifier' class='btn btn-primary' value='Modifier'>
       </form>
+      ";modifie();
+      echo "
     </div>
     <div class='col'>
     </div>

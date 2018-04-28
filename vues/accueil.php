@@ -1,4 +1,3 @@
-<?php var_dump($_SESSION['panier']); ?><!-- Presentation des services de l'entreprise -->
  <section id="home-service" style="margin-top:20px;">
        <div class="container">
            <div class="row ">

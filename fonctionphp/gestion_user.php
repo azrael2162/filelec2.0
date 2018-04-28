@@ -80,7 +80,7 @@ function Deconnexion(){
   header('location: ?page=accueil');
 }
 
-function Modife(){
+function ValeurModife(){
   GLOBAL $db;
   $query = "SELECT * FROM UTILISATEUR WHERE uti_id='".$_SESSION['id_a']."'";
   $query2ok=$db->prepare($query);
@@ -97,12 +97,24 @@ function Modife(){
       $password=$row[5];
     }
     echo "
-    <label for=''><p>Nom:</p><input type='text' name='' value='$nom'></label><br>
-    <label for=''><p>Prénom:</p><input type='text' name='' value='$prenom'></label><br>
-    <label for=''><p>Email:</p><input type='mail' name='' value='$email'></label><br>
-    <label for=''><p>Login:</p><input type='text' name='' value='$login'></label><br>
-    <label for=''><p>Password:</p><input type='password' name='' placeholder='Votre '></label><br>
+    <label for=''><p>Nom:</p><input type='text' name='login' placeholder='$nom'></label><br>
+    <label for=''><p>Prénom:</p><input type='text' name='prenom' placeholder='$prenom'></label><br>
+    <label for=''><p>Email:</p><input type='mail' name='email' placeholder='$email'></label><br>
+    <label for=''><p>Login:</p><input type='text' name='login' placeholder='$login'></label><br>
+    <label for=''><p>Password:</p><input type='password' name='password' placeholder='Votre password'></label><br>
     ";
+  }
+}
+function modifie(){
+  if (isset($_POST['modifier'])) {
+     $nom=$_POST['nom'];
+     $prenom=$_POST['prenom'];
+     $email=$_POST['email'];
+     $login=$_POST['login'];
+     $password=$_POST['password'];
+     echo $password;
+     echo "string";
+     die();
   }
 }
 
