@@ -134,7 +134,7 @@ CREATE TABLE UTILISATEUR(
         uti_prenom Varchar (25) ,
         uti_email  Varchar (25) ,
         login      Varchar (25) ,
-        passwordd   Varchar (100) ,
+        passwordd  Varchar (255) ,
         grp_id     Int ,
         PRIMARY KEY (uti_id )
 )ENGINE=InnoDB;

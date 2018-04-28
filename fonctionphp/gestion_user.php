@@ -62,8 +62,6 @@ function Inscription(){
           session_start();
           $_SESSION['id_a']=$id;
           header('location: ?page=accueil');
-        }else {
-          echo "Erreur d'insertion";
         }
       }else {
         echo "veuillez ecrire un password > à 6 caracteres";
@@ -97,7 +95,7 @@ function ValeurModife(){
       $password=$row[5];
     }
     echo "
-    <label for=''><p>Nom:</p><input type='text' name='login' placeholder='$nom'></label><br>
+    <label for=''><p>Nom:</p><input type='text' name='nom' placeholder='$nom'></label><br>
     <label for=''><p>Prénom:</p><input type='text' name='prenom' placeholder='$prenom'></label><br>
     <label for=''><p>Email:</p><input type='mail' name='email' placeholder='$email'></label><br>
     <label for=''><p>Login:</p><input type='text' name='login' placeholder='$login'></label><br>
@@ -112,15 +110,23 @@ function modifie(){
      $email=$_POST['email'];
      $login=$_POST['login'];
      $password=$_POST['password'];
-     echo $password;
-     echo "string";
-     die();
+     GLOBAL $db;
+     if (strlen($password) >= 6) {
+       $passwordcrypt=sha1($password);
+       $query="UPDATE UTILISATEUR SET uti_nom='$nom', uti_prenom='$prenom',uti_email='$email',login='$login',passwordd='$passwordcrypt' WHERE uti_id='".$_SESSION['id_a']."'";
+       $queryok=$db->prepare($query);
+       $queryok->execute();
+       header("Refresh:0; ?page=gestmembre");
+     }else {
+       echo "Le password est trop court";
+     }
+
   }
 }
 
 function  desinscrire(){
   GLOBAL $db;
-  $query="DELETE  FROM UTILISATEUR WHERE uti_id='".$_SESSION['id_a']."'";
+  $query="DELETE FROM UTILISATEUR WHERE uti_id='".$_SESSION['id_a']."'";
   $queryok=$db->prepare($query);
   $queryok->execute();
   $_SESSION =array();

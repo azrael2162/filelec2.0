@@ -25,7 +25,6 @@ include 'fonctionphp/gestion_user.php';
     <div class='col'>
     </div>
   </div>
-  ><?php echo
 </div>";
 }else {
   header('location: ?page=membre');
