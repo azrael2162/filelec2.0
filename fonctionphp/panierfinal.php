@@ -27,7 +27,6 @@ for ($i=0 ;$i < $nbArticles ; $i++)
 				echo "<br><br>";
         echo "<br><br><center><span class='badge badge-primary badge-pill'>Total : $total €</span></center>";
 				echo "<br><br>
-				<center><a href='' class='btn btn-primary' name=''>Valider ma commande</a></center>
+				<center><a href='?page=valider' class='btn btn-primary'>Valider ma commande</a></center>
 			";
-			var_dump($_SESSION['panier']);
  ?>
