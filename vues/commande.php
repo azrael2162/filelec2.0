@@ -9,8 +9,9 @@ include 'fonctionphp/commande.php';
       <a href='?page=desinc' class='btn btn-primary'>Se désinscrire</a>
     </div>
     <div class='col'>
-      <h5>Mes informations personelles</h5>
+      <h5>Mes informations sur les commandes</h5>
       ";?>
+      <br><br>
       <?php
       Commande();
       echo "

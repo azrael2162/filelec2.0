@@ -14,4 +14,5 @@ function Ajoutpanier(){
     echo "<SCRIPT LANGUAGE='JavaScript'> document.location.href='?page=membre'</SCRIPT>";
   }
 }
+
  ?>
