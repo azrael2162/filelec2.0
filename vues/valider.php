@@ -6,7 +6,7 @@
         <form class="" action="?page=valider" method="post">
           <table>
             <tr>
-              <input type="number" name="rue" placeholder="Numero de rue"><br>
+              <input type="text" name="pays" placeholder="Votre Pays"><br>
               <input type="text" name="adresse" placeholder="adresse"><br>
               <input type="text" name="dep" placeholder="département"><br>
               <input type="number" name="codepost" placeholder="Code postal"><br><br><br>
@@ -17,7 +17,8 @@
       </center>
     </div>
     <div class="col">
-      <?php include 'fonctionphp/valider.php'; ?>
+      <?php include 'fonctionphp/valider.php';
+      Valider();?>
     </div>
   </div>
 </div>
